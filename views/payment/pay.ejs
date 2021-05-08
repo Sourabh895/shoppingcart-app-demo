@@ -1,0 +1,39 @@
+<%- include("../partials/header")%>
+<%- include("../partials/navbar")%>
+
+
+<div class="container" style="margin-top: 3rem;">
+   
+            <form class="validated-form" action="/products" method="POST" style="width: 40%; margin: 10px auto;" novalidate>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Account's holder Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="name" name="" required>
+                </div>
+                <div class="mb-3">
+                  <label for="number" class="form-label">Enter 16 digits Card number</label>
+                  <input type="text" class="form-control" id="number" placeholder="**** **** **** ****" name="" required>
+                </div>
+                <div class="mb-3">
+                    <label for="date" class="form-label">Expiry Date</label>
+                    <input type="date" class="form-control" id="date" placeholder="expiry date" name="" required>
+                  </div>
+                <div class="mb-3">
+                    <label for="cvv" class="form-label">cvv</label>
+                    <input type="number" class="form-control" id="cvv" placeholder="cvv" name="" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="Password" class="form-label">Password</label>
+                    <input type="number" class="form-control" id="Password" placeholder="pin" name="" required>
+                  </div>
+                  <div class="mb-3">
+                      <label for="desc" class="form-label">Additional Details</label>
+                      <textarea name="" class="form-control"  id="desc" cols="20" rows="3" required></textarea>
+                  </div>
+                
+                <button type="submit" class="btn btn-success">Submit</button>
+              </form>
+        </div>
+   
+    
+
+<%- include("../partials/footer")%>
